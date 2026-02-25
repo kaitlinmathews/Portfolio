@@ -4,22 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kaitlin Mathews | Mechanical Engineering</title>
-  <meta name="description" content="Kaitlin Mathews — Mechanical Engineering student. Design, prototyping, testing, and cross-functional collaboration." />
+  <meta name="description" content="Kaitlin Mathews — Mechanical Engineering student portfolio." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="topbar">
-    <div class="wrap topbar__inner">
+    <div class="container topbar-inner">
       <a class="brand" href="#top" aria-label="Go to top">
-        <img class="brand__seal" src="assets/Quinnipiac_University_Seal.svg.png" alt="Quinnipiac University seal" />
-        <div class="brand__text">
-          <div class="brand__name">Kaitlin Mathews</div>
-          <div class="brand__tag">Mechanical Engineering • BS May 2027 (anticipated)</div>
+        <img class="brand-logo" src="assets/qu-seal.png" alt="Quinnipiac University seal" />
+        <div class="brand-text">
+          <div class="brand-name">Kaitlin Mathews</div>
+          <div class="brand-subtitle">Mechanical Engineering • BS May 2027 (anticipated)</div>
         </div>
       </a>
 
-      <nav class="nav" aria-label="Site navigation">
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#leadership">Leadership</a>
@@ -27,228 +27,229 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <div class="topbar__cta">
-        <a class="btn btn--primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-      </div>
+      <a class="btn btn-primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO -->
     <section class="hero">
-      <div class="wrap hero__grid">
-        <div class="hero__copy">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="kicker">Pink + Navy</p>
           <h1>Mechanical engineering focused on design, prototyping, and testing.</h1>
-          <p class="sub">
-            Mechanical Engineering student at Quinnipiac University with experience supporting R&D teams through
-            SolidWorks design, validation (FEA + hand calculations), and cross-functional collaboration.
+          <p class="lead">
+            Mechanical Engineering student at Quinnipiac University with experience supporting R&D teams through SolidWorks
+            design, validation (FEA + hand calculations), and cross-functional collaboration.
           </p>
 
-          <div class="hero__buttons">
-            <a class="btn btn--primary" href="#experience">View experience</a>
-            <a class="btn btn--ghost" href="#skills">Skills</a>
-            <a class="btn btn--ghost" href="#contact">Contact</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#experience">View Experience</a>
+            <a class="btn btn-ghost" href="#skills">Skills</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
           </div>
 
-          <div class="hero__cards">
-            <div class="card card--accent">
-              <div class="card__title">Highlights</div>
+          <div class="hero-cards">
+            <div class="card">
+              <h2 class="card-title">Highlights</h2>
               <ul class="list">
                 <li>Mechanical Engineering Intern — Locus Robotics (Summer 2025)</li>
-                <li>SolidWorks design + validation using FEA and hand calculations</li>
-                <li>Cross-functional collaboration (electrical, software, manufacturing)</li>
+                <li>SolidWorks design and validation using FEA and hand calculations</li>
+                <li>Cross-functional collaboration with electrical, software, and manufacturing teams</li>
               </ul>
             </div>
 
             <div class="card">
-              <div class="card__title">Quick Info</div>
+              <h2 class="card-title">Quick Info</h2>
               <div class="facts">
                 <div class="fact"><span>Location</span><strong>Stow, MA</strong></div>
                 <div class="fact"><span>Email</span><strong>kaitlinemathews@gmail.com</strong></div>
                 <div class="fact"><span>Phone</span><strong>978-875-2556</strong></div>
-                <div class="fact"><span>Resume</span><strong>PDF Available</strong></div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="hero-right">
+          <div class="photo-frame" role="img" aria-label="Executive board photo"></div>
+          <p class="caption">Executive Board — Quinnipiac Women’s Club Ice Hockey</p>
+
+          <div class="note">
+            <h2 class="note-title">Objective</h2>
+            <p class="note-text">
+              Seeking internship/co-op opportunities in mechanical design, product development, and test/validation.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section">
-      <div class="wrap">
-        <div class="section__head">
-          <h2>About</h2>
-          <p class="muted">
-            I’m a Mechanical Engineering student at Quinnipiac University (BS May 2027 anticipated). My experience spans
-            R&D support, mechanical equipment maintenance, and customer-facing technical work.
-          </p>
-        </div>
+      <div class="container">
+        <h2>About</h2>
+        <p class="muted">
+          I’m a Mechanical Engineering student at Quinnipiac University (BS May 2027 anticipated). My experience spans
+          R&D support, mechanical equipment maintenance, and customer-facing technical roles.
+        </p>
 
-        <div class="grid grid--2">
-          <div class="tile">
-            <h3>Strengths</h3>
-            <ul class="list">
-              <li>CAD and mechanical assemblies in SolidWorks</li>
-              <li>Validation mindset: stiffness/strength checks using FEA + hand calculations</li>
-              <li>Clear communication in cross-functional and customer-facing settings</li>
-            </ul>
-          </div>
-
-          <div class="tile">
+        <div class="two-col">
+          <div class="panel">
             <h3>Education</h3>
-            <p class="meta">Quinnipiac University • Hamden, CT</p>
+            <p class="muted">Quinnipiac University • Hamden, CT</p>
             <ul class="list">
               <li>Bachelor of Science — Mechanical Engineering</li>
               <li>May 2027 (anticipated)</li>
             </ul>
           </div>
+
+          <div class="panel">
+            <h3>Core Strengths</h3>
+            <ul class="list">
+              <li>Mechanical design and assemblies in SolidWorks</li>
+              <li>Validation mindset using FEA and hand calculations</li>
+              <li>Clear communication in cross-functional and customer-facing settings</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section section--alt">
-      <div class="wrap">
-        <div class="section__head">
-          <h2>Experience</h2>
-          <p class="muted">Selected experience from engineering, maintenance, and technical customer-facing roles.</p>
-        </div>
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience</h2>
 
-        <div class="stack">
-          <div class="row">
-            <div class="row__left">
-              <h3>Mechanical Engineering Intern — Locus Robotics</h3>
-              <p class="meta">Wilmington, MA • 05/2025 – 08/2025</p>
-            </div>
-            <div class="row__right">
-              <ul class="list">
-                <li>Supported design, prototyping, and testing of autonomous robots in a fast-paced R&D environment</li>
-                <li>Developed mechanical components and assemblies in SolidWorks</li>
-                <li>Conducted FEA and hand calculations to validate strength and stiffness</li>
-                <li>Collaborated with electrical, software, and manufacturing teams to improve manufacturing/assembly processes</li>
-              </ul>
-            </div>
+        <div class="item">
+          <div class="item-left">
+            <h3>Mechanical Engineering Intern — Locus Robotics</h3>
+            <p class="muted">Wilmington, MA • 05/2025 – 08/2025</p>
           </div>
-
-          <div class="row">
-            <div class="row__left">
-              <h3>Maintenance — Stow Acres Country Club</h3>
-              <p class="meta">Stow, MA • 05/2024 – Present (Seasonal)</p>
-            </div>
-            <div class="row__right">
-              <ul class="list">
-                <li>Operated and maintained mechanical equipment (mowers, tractors, irrigation systems) on a 36-hole course</li>
-                <li>Diagnosed and resolved mechanical issues quickly with a safety-first approach</li>
-                <li>Applied attention to detail to maintain course function and customer experience</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="row__left">
-              <h3>Bartender — Golf Cove</h3>
-              <p class="meta">North Haven, CT • 03/2025 – Present (Part-Time)</p>
-            </div>
-            <div class="row__right">
-              <ul class="list">
-                <li>Supported front-of-house operations while maintaining a high standard of customer service</li>
-                <li>Troubleshot golf simulator systems and helped guests navigate/optimize their experience</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="row__left">
-              <h3>Sales Associate — Pure Hockey</h3>
-              <p class="meta">Marlborough, MA • 08/2021 – 02/2025</p>
-            </div>
-            <div class="row__right">
-              <ul class="list">
-                <li>Provided technical consultation and tailored equipment solutions using deep product knowledge</li>
-                <li>Delivered high-quality service in a fast-paced retail environment</li>
-                <li>Consistently exceeded weekly sales goals</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="row__left">
-              <h3>Goalie Coach — Nevin Hamilton Elite Goaltending</h3>
-              <p class="meta">Marlborough, MA • 05/2023 – Present (Seasonal)</p>
-            </div>
-            <div class="row__right">
-              <ul class="list">
-                <li>Developed and led training programs focused on technique, positioning, and mental preparedness</li>
-                <li>Provided personalized feedback through on-ice sessions and game analysis</li>
-                <li>Fostered a supportive environment to build confidence and resilience in competitive athletes</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="row__left">
-              <h3>Server — Chill Kitchen & Bar</h3>
-              <p class="meta">Marlborough, MA • 05/2023 – 08/2023</p>
-            </div>
-            <div class="row__right">
-              <ul class="list">
-                <li>Managed multiple tasks in a high-volume environment while maintaining service quality</li>
-                <li>Collaborated with team members to ensure a seamless customer experience</li>
-              </ul>
-            </div>
+          <div class="item-right">
+            <ul class="list">
+              <li>Supported design, prototyping, and testing of autonomous robots in an R&D environment</li>
+              <li>Developed mechanical components and assemblies in SolidWorks</li>
+              <li>Conducted FEA and hand calculations to validate strength and stiffness</li>
+              <li>Collaborated with electrical, software, and manufacturing teams to improve processes</li>
+            </ul>
           </div>
         </div>
 
-        <p class="note">All experience content is sourced from your resume.</p>
+        <div class="item">
+          <div class="item-left">
+            <h3>Maintenance — Stow Acres Country Club</h3>
+            <p class="muted">Stow, MA • 05/2024 – Present (Seasonal)</p>
+          </div>
+          <div class="item-right">
+            <ul class="list">
+              <li>Operated and maintained mechanical equipment across a 36-hole course</li>
+              <li>Diagnosed and resolved mechanical issues with a safety-first approach</li>
+              <li>Supported daily operations through preventative maintenance and attention to detail</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <h3>Bartender — Golf Cove</h3>
+            <p class="muted">North Haven, CT • 03/2025 – Present (Part-Time)</p>
+          </div>
+          <div class="item-right">
+            <ul class="list">
+              <li>Supported front-of-house operations while maintaining customer service standards</li>
+              <li>Troubleshot golf simulator systems and supported guest experience</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <h3>Sales Associate — Pure Hockey</h3>
+            <p class="muted">Marlborough, MA • 08/2021 – 02/2025</p>
+          </div>
+          <div class="item-right">
+            <ul class="list">
+              <li>Provided technical consultation and tailored equipment solutions using product knowledge</li>
+              <li>Delivered high-quality service in a fast-paced retail environment</li>
+              <li>Consistently exceeded weekly sales goals</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <h3>Goalie Coach — Nevin Hamilton Elite Goaltending</h3>
+            <p class="muted">Marlborough, MA • 05/2023 – Present (Seasonal)</p>
+          </div>
+          <div class="item-right">
+            <ul class="list">
+              <li>Led training programs focused on technique and performance development</li>
+              <li>Provided feedback through on-ice sessions and game analysis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <h3>Server — Chill Kitchen & Bar</h3>
+            <p class="muted">Marlborough, MA • 05/2023 – 08/2023</p>
+          </div>
+          <div class="item-right">
+            <ul class="list">
+              <li>Managed multiple tasks in a high-volume environment while maintaining service quality</li>
+              <li>Collaborated with team members to ensure a seamless customer experience</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footnote">Content above is based on your resume.</p>
       </div>
     </section>
 
-    <!-- LEADERSHIP -->
     <section id="leadership" class="section">
-      <div class="wrap">
-        <div class="section__head">
-          <h2>Student Leadership</h2>
-          <p class="muted">Campus involvement and leadership roles.</p>
-        </div>
+      <div class="container">
+        <h2>Leadership</h2>
 
-        <div class="grid grid--3">
-          <div class="tile">
+        <div class="three-col">
+          <div class="panel">
             <h3>Vice President</h3>
-            <p class="meta">Quinnipiac Women’s Club Ice Hockey • 2024 – Present</p>
+            <p class="muted">Quinnipiac Women’s Club Ice Hockey • 2024 – Present</p>
           </div>
-          <div class="tile">
+          <div class="panel">
             <h3>Elected Member</h3>
-            <p class="meta">Club Sports Advisory Board • 2025 – Present</p>
+            <p class="muted">Club Sports Advisory Board • 2025 – Present</p>
           </div>
-          <div class="tile">
+          <div class="panel">
             <h3>Member</h3>
-            <p class="meta">Women Empowered • 2023 – Present</p>
+            <p class="muted">Women Empowered • 2023 – Present</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section section--alt">
-      <div class="wrap">
-        <div class="skills">
-          <div class="skills__col">
-            <h3>Design</h3>
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+
+        <div class="two-col">
+          <div class="panel">
+            <h3>Engineering & Design</h3>
             <div class="chips">
               <span class="chip">SolidWorks</span>
+              <span class="chip">FEA</span>
+              <span class="chip">Hand Calculations</span>
             </div>
           </div>
 
-          <div class="skills__col">
-            <h3>Programs</h3>
+          <div class="panel">
+            <h3>Programming & Tools</h3>
             <div class="chips">
               <span class="chip">MATLAB</span>
-              <span class="chip">R Script</span>
+              <span class="chip">R</span>
+              <span class="chip">Microsoft Office Certified</span>
+              <span class="chip">Google Apps</span>
             </div>
           </div>
 
-          <div class="skills__col">
-            <h3>Shop</h3>
+          <div class="panel">
+            <h3>Shop / Hands-on</h3>
             <div class="chips">
               <span class="chip">Drill Press</span>
               <span class="chip">Band Saw</span>
@@ -260,51 +261,47 @@
             </div>
           </div>
 
-          <div class="skills__col">
-            <h3>Other</h3>
+          <div class="panel">
+            <h3>Customer-facing</h3>
             <div class="chips">
-              <span class="chip">Microsoft Office Certified</span>
-              <span class="chip">Excel</span>
-              <span class="chip">PowerPoint</span>
-              <span class="chip">Word</span>
-              <span class="chip">Google Apps</span>
+              <span class="chip">Technical Communication</span>
+              <span class="chip">Problem Solving</span>
+              <span class="chip">Operations Support</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section">
-      <div class="wrap">
-        <div class="section__head">
-          <h2>Contact</h2>
-        </div>
+      <div class="container">
+        <h2>Contact</h2>
 
-        <div class="contact">
-          <div class="contact__card">
-            <div class="contact__line"><span>Email</span><strong>kaitlinemathews@gmail.com</strong></div>
-            <div class="contact__line"><span>Phone</span><strong>978-875-2556</strong></div>
-            <!-- Optional: add LinkedIn -->
-            <div class="contact__line"><span>LinkedIn</span><strong><a class="link" href="#" target="_blank" rel="noreferrer">Add link</a></strong></div>
+        <div class="two-col">
+          <div class="panel">
+            <div class="facts">
+              <div class="fact"><span>Email</span><strong>kaitlinemathews@gmail.com</strong></div>
+              <div class="fact"><span>Phone</span><strong>978-875-2556</strong></div>
+              <div class="fact"><span>Resume</span><strong><a class="link" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download PDF</a></strong></div>
+            </div>
+            <p class="muted small">Add LinkedIn if you want: replace the link in the code.</p>
           </div>
 
-          <div class="contact__card">
-            <h3>Resume</h3>
-            <p class="muted">Download the PDF version.</p>
-            <a class="btn btn--primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-            <p class="tiny muted">Keep the filename as <code>assets/resume.pdf</code> so the button never breaks.</p>
+          <div class="panel">
+            <h3>Links</h3>
+            <ul class="list">
+              <li><a class="link" href="#" target="_blank" rel="noreferrer">LinkedIn (add link)</a></li>
+              <li><a class="link" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume PDF</a></li>
+            </ul>
           </div>
         </div>
-
-        <p class="tiny muted">Resume source: Kaitlin Mathews (uploaded PDF).</p>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="wrap footer__inner">
-        <div>© <span id="year"></span> Kaitlin Mathews</div>
-        <div class="footer__right">Pink + Navy</div>
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Kaitlin Mathews</span>
+        <span class="muted">Pink + Navy</span>
       </div>
     </footer>
   </main>
