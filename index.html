@@ -4,149 +4,378 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kaitlin Mathews | Portfolio</title>
-  <meta name="description" content="Mechanical engineering portfolio: product development, testing, and hockey leadership." />
+  <meta name="description" content="Kaitlin Mathews — Mechanical Engineering student. Product development, test fixtures, and hockey leadership." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="hero">
-        <div>
-          <div class="nameBlock">
-  <img src="assets/Quinnipiac_University_Seal.svg.png" class="logo">
-  <h1>Kaitlin Mathews</h1>
-</div>
-          <p class="subtitle">Mechanical Engineering • Product Development • Hockey</p>
-          <p class="blurb">
-            Mechanical Engineering student at Quinnipiac University (BS, May 2027). Hands-on experience in design,
-            prototyping, testing, and customer-facing technical work.
-          </p>
-
-          <div class="buttons">
-            <a class="btn primary" href="#projects">Projects</a>
-            <a class="btn" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-            <!-- Optional: replace with your real LinkedIn -->
-            <a class="btn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top">
+        <img class="brand__seal" src="assets/qu-seal.png" alt="Quinnipiac University seal" />
+        <div class="brand__text">
+          <div class="brand__name">Kaitlin Mathews</div>
+          <div class="brand__tag">Mechanical Engineering • Goalie • VP (QU Women’s Club Hockey)</div>
         </div>
+      </a>
 
-        <div class="card">
-          <h2 class="cardTitle">Quick Facts</h2>
-          <ul class="bullets">
-            <li><strong>School:</strong> Quinnipiac University (Hamden, CT)</li>
-            <li><strong>Expected Graduation:</strong> May 2027</li>
-            <li><strong>Location:</strong> Stow, MA</li>
-            <li><strong>Core Skills:</strong> SolidWorks, MATLAB, R</li>
-          </ul>
-        </div>
+      <nav class="nav">
+        <a href="#highlights">Highlights</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#skills">Skills</a>
+        <a href="#photos">Photos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="topbar__cta">
+        <a class="btn btn--ghost" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a>
       </div>
     </div>
   </header>
 
-  <main class="container">
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="kicker">Pink + Navy • QU Proud • Build → Test → Improve</p>
+          <h1>Engineer mindset. Goalie grit. Team-first leadership.</h1>
+          <p class="sub">
+            I’m a Mechanical Engineering student at Quinnipiac University focused on product development and real-world builds:
+            CAD → validation → hands-on testing. I also lead from the crease and as VP of QU Women’s Club Ice Hockey.
+          </p>
+
+          <div class="hero__buttons">
+            <a class="btn btn--primary" href="#projects">See projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact</a>
+            <!-- swap these links when ready -->
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
+          <div class="hero__cards" id="highlights">
+            <div class="card card--accent">
+              <div class="card__title">What I’m best at</div>
+              <ul class="list">
+                <li>Mechanical design that considers manufacturability + serviceability</li>
+                <li>Test/validation thinking (fixtures, repeatability, failure modes)</li>
+                <li>Clear communication: technical + customer-facing</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__title">Quick snapshot</div>
+              <div class="facts">
+                <div class="fact"><span>School</span><strong>Quinnipiac University</strong></div>
+                <div class="fact"><span>Major</span><strong>Mechanical Engineering</strong></div>
+                <div class="fact"><span>Focus</span><strong>Product Dev • Testing</strong></div>
+                <div class="fact"><span>Hockey</span><strong>Goalie • VP</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__image" style="background-image:url('assets/hero-team.jpg')" role="img" aria-label="Team photo on ice"></div>
+
+          <div class="hero__mediaRow">
+            <div class="mini" style="background-image:url('assets/goalies.jpg')" role="img" aria-label="Goalies photo"></div>
+            <div class="mini mini--text">
+              <div class="mini__title">What I want next</div>
+              <p class="mini__p">
+                Internships/co-ops where I can own real hardware work: requirements → CAD → build → test results.
+                Bonus if it’s medical devices, robotics, or performance gear.
+              </p>
+              <div class="mini__chips">
+                <span class="chip">SolidWorks</span>
+                <span class="chip">FEA</span>
+                <span class="chip">MATLAB</span>
+                <span class="chip">R</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
     <section id="projects" class="section">
-      <h2>Technical Experience</h2>
-      <div class="grid">
-        <article class="tile">
-          <h3>Locus Robotics — Mechanical Engineering Intern</h3>
-          <p class="meta">Wilmington, MA • Summer 2025</p>
-          <ul class="bullets">
-            <li>Designed mechanical components/assemblies in SolidWorks</li>
-            <li>Used FEA + hand calculations to validate strength and stiffness</li>
-            <li>Collaborated with electrical/software/manufacturing to improve assembly</li>
-          </ul>
-        </article>
-
-        <article class="tile">
-          <h3>Pure Hockey — Sales Associate (Goalie + Full Store)</h3>
-          <p class="meta">Marlborough, MA • 2021–2025</p>
-          <ul class="bullets">
-            <li>Technical consultation + tailored goalie equipment solutions</li>
-            <li>Worked across players/goalies, beginners to high-level athletes</li>
-            <li>Consistently exceeded sales goals in a fast-paced environment</li>
-          </ul>
-        </article>
-
-        <article class="tile">
-          <h3>QU Women’s Club Ice Hockey — Vice President</h3>
-          <p class="meta">2024–Present</p>
-          <ul class="bullets">
-            <li>Program operations: scheduling, logistics, equipment, and team support</li>
-            <li>Leadership and accountability in a competitive environment</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Work Experience</h2>
-      <div class="stack">
-        <div class="row">
-          <div>
-            <h3>Stow Acres Country Club — Maintenance</h3>
-            <p class="meta">Stow, MA • 2024–Present (Seasonal)</p>
-            <p>Operated/maintained mowers, tractors, and irrigation systems; solved mechanical issues quickly.</p>
-          </div>
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Featured Projects</h2>
+          <p class="muted">
+            These are written the way recruiters skim: what it was, what I owned, what changed, and why it mattered.
+          </p>
         </div>
 
-        <div class="row">
-          <div>
-            <h3>Golf Cove — Bartender</h3>
-            <p class="meta">North Haven, CT • 2025–Present</p>
-            <p>Customer-facing service + troubleshooting golf simulator systems and guest experience.</p>
-          </div>
+        <div class="grid">
+          <article class="tile">
+            <div class="tile__top">
+              <h3>Locus Robotics — Durability / Test Fixture Work</h3>
+              <span class="pill">Mechanical design + validation</span>
+            </div>
+            <p class="muted">
+              Built/tested hardware that makes durability testing repeatable (the kind of work that saves teams time and prevents “guessing”).
+            </p>
+            <ul class="list">
+              <li>Translated constraints into requirements (load, motion, repeatability, safety)</li>
+              <li>Designed assemblies in SolidWorks; iterated based on fit and real-world handling</li>
+              <li>Focused on failure modes and how to catch them early with testing</li>
+            </ul>
+            <div class="tile__bottom">
+              <a class="link" href="#contact">Ask me about this →</a>
+            </div>
+          </article>
+
+          <article class="tile">
+            <div class="tile__top">
+              <h3>Pure Hockey — Goalie Division + Full Store</h3>
+              <span class="pill">Technical sales + fit</span>
+            </div>
+            <p class="muted">
+              I’m comfortable translating technical product differences into clear decisions — for beginners through advanced athletes.
+            </p>
+            <ul class="list">
+              <li>Goalie equipment fitting: safety, mobility, fit, and performance tradeoffs</li>
+              <li>Worked across player + goalie categories; built trust fast with customers</li>
+              <li>Explained gear like an engineer: “why this, not that”</li>
+            </ul>
+            <div class="tile__bottom">
+              <a class="link" href="#photos">See photos →</a>
+            </div>
+          </article>
+
+          <article class="tile">
+            <div class="tile__top">
+              <h3>QU Women’s Club Ice Hockey — Program Ops</h3>
+              <span class="pill">Leadership + logistics</span>
+            </div>
+            <p class="muted">
+              Vice President responsibilities: keeping the program running smoothly so athletes can compete.
+            </p>
+            <ul class="list">
+              <li>Scheduling, travel/logistics support, equipment ordering, and team organization</li>
+              <li>Strong team culture + accountability (competitive playing time environment)</li>
+              <li>Comfortable owning problems end-to-end and communicating clearly</li>
+            </ul>
+            <div class="tile__bottom">
+              <a class="link" href="#leadership">More leadership →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section section--alt">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Experience</h2>
+          <p class="muted">Real jobs, real responsibility — technical + people-facing.</p>
         </div>
 
-        <div class="row">
-          <div>
-            <h3>Nevin Hamilton Elite Goaltending — Goalie Coach</h3>
-            <p class="meta">Marlborough, MA • 2023–Present (Seasonal)</p>
-            <p>Developed training programs, provided feedback via on-ice sessions and game analysis.</p>
+        <div class="stack">
+          <div class="row">
+            <div class="row__left">
+              <h3>Locus Robotics — Mechanical Engineering Intern</h3>
+              <p class="meta">Wilmington, MA • Summer 2025</p>
+            </div>
+            <div class="row__right">
+              <ul class="list">
+                <li>Mechanical design + assembly work supporting product reliability and serviceability</li>
+                <li>Cross-functional collaboration with electrical/software/manufacturing</li>
+                <li>Focused on testing mindset: build it, measure it, improve it</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="row__left">
+              <h3>Pure Hockey — Sales Associate (Goalie + Full Store)</h3>
+              <p class="meta">Marlborough, MA • 2021–2025</p>
+            </div>
+            <div class="row__right">
+              <ul class="list">
+                <li>Specialized in goalie equipment with experience across all hockey categories</li>
+                <li>Customer education + product matching under real constraints (budget, safety, level)</li>
+                <li>Fast-paced retail operations + inventory / merchandising</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="row__left">
+              <h3>Goalie Coach — Nevin Hamilton Elite Goaltending</h3>
+              <p class="meta">Marlborough, MA • 2023–Present (Seasonal)</p>
+            </div>
+            <div class="row__right">
+              <ul class="list">
+                <li>Coached ages ~7–24: fundamentals, movement, and game confidence</li>
+                <li>Clear feedback + drills that translate to game situations</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="row__left">
+              <h3>Stow Acres Country Club — Maintenance</h3>
+              <p class="meta">Stow, MA • 2024–Present (Seasonal)</p>
+            </div>
+            <div class="row__right">
+              <ul class="list">
+                <li>Hands-on mechanical work with equipment + preventative maintenance</li>
+                <li>Problem-solving in the field: diagnose, fix, keep things moving</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="row__left">
+              <h3>Golf Cove — Bartender / Ops Support</h3>
+              <p class="meta">North Haven, CT • 2025–Present</p>
+            </div>
+            <div class="row__right">
+              <ul class="list">
+                <li>Customer-facing service + keeping operations smooth during busy hours</li>
+                <li>Troubleshooting mindset when something’s “off” (systems, flow, experience)</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Skills</h2>
-      <div class="chips">
-        <span class="chip">SolidWorks</span>
-        <span class="chip">FEA Analysis</span>
-        <span class="chip">MATLAB</span>
-        <span class="chip">R Script</span>
-        <span class="chip">Excel / PowerPoint / Word (Certified)</span>
-        <span class="chip">Bridgeport</span>
-        <span class="chip">Band Saw</span>
-        <span class="chip">Drill Press</span>
-        <span class="chip">Handheld Power Tools</span>
+    <!-- Leadership -->
+    <section id="leadership" class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Leadership</h2>
+          <p class="muted">The part that makes me different: I lead under pressure and I’m consistent.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="tile">
+            <h3>VP — QU Women’s Club Ice Hockey</h3>
+            <ul class="list">
+              <li>Organize operations: scheduling, logistics, equipment, and communication</li>
+              <li>Help build a program culture that’s competitive and supportive</li>
+              <li>Represent the team professionally with university staff and partners</li>
+            </ul>
+          </div>
+
+          <div class="tile">
+            <h3>Goalie</h3>
+            <ul class="list">
+              <li>High-pressure decision making, every shift</li>
+              <li>Detail-driven: mechanics, repetition, and reset after mistakes</li>
+              <li>Team-first leadership (goalies set the tone)</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Photos</h2>
-      <p class="note">These load from your repo. Upload your images into <code>assets/</code> and match the filenames.</p>
-      <div class="gallery">
-        <img src="assets/team-1.JPEG" alt="QU Women’s Club Ice Hockey team photo" />
-        <img src="assets/DSC_0031.jpeg" alt="QU Women’s Club Ice Hockey goalies group photo" />
+    <!-- Skills -->
+    <section id="skills" class="section section--alt">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Skills</h2>
+          <p class="muted">Tools I actually use.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skills__col">
+            <h3>Engineering</h3>
+            <div class="chips">
+              <span class="chip">SolidWorks</span>
+              <span class="chip">FEA</span>
+              <span class="chip">Design for Assembly</span>
+              <span class="chip">Fixture Design</span>
+              <span class="chip">Testing / Validation</span>
+            </div>
+          </div>
+
+          <div class="skills__col">
+            <h3>Software</h3>
+            <div class="chips">
+              <span class="chip">MATLAB</span>
+              <span class="chip">R</span>
+              <span class="chip">Excel</span>
+              <span class="chip">PowerPoint</span>
+              <span class="chip">Word</span>
+            </div>
+          </div>
+
+          <div class="skills__col">
+            <h3>Shop / Hands-on</h3>
+            <div class="chips">
+              <span class="chip">Bridgeport</span>
+              <span class="chip">Band Saw</span>
+              <span class="chip">Drill Press</span>
+              <span class="chip">Handheld Tools</span>
+              <span class="chip">Assembly</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Contact</h2>
-      <div class="contact">
-        <p><strong>Email:</strong> kaitlinemathews@gmail.com</p>
-        <p><strong>Phone:</strong> 978-875-2556</p>
-        <p class="note">Add LinkedIn when you’re ready.</p>
+    <!-- Photos -->
+    <section id="photos" class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Photos</h2>
+          <p class="muted">A little personality + proof I’m not all talk.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="photo">
+            <img src="assets/hero-team.jpg" alt="Team photo at QU rink" />
+            <figcaption>QU Women’s Club Ice Hockey — team photo</figcaption>
+          </figure>
+          <figure class="photo">
+            <img src="assets/goalies.jpg" alt="Goalies group photo on ice" />
+            <figcaption>Goalies — where I live</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--alt">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p class="muted">Fastest way: email. I respond.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__card">
+            <div class="contact__line"><span>Email</span><strong>YOUR_EMAIL_HERE</strong></div>
+            <div class="contact__line"><span>Phone</span><strong>YOUR_PHONE_HERE</strong></div>
+            <div class="contact__line"><span>LinkedIn</span><strong>ADD_LINK</strong></div>
+          </div>
+
+          <div class="contact__card">
+            <h3>Resume</h3>
+            <p class="muted">Download the PDF version recruiters will see.</p>
+            <a class="btn btn--primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+            <p class="tiny muted">Tip: keep filename as <code>assets/resume.pdf</code> so links never break.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <div>© <span id="year"></span> Kaitlin Mathews</div>
+        <div class="footer__right">Pink + Navy • Built on GitHub Pages</div>
+      </div>
+    </footer>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Kaitlin Mathews</p>
-    </div>
-  </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
