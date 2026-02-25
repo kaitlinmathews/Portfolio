@@ -1,21 +1,25 @@
 /* styles.css */
 :root{
-  --navy: #0C2340;
-  --navy-soft: #102A43;
+  /* Primary Identity */
+  --navy: #081B33;          /* deep professional navy */
+  --navy-soft: #0E2A4A;     /* lighter navy for panels */
 
-  --pink: #E75480;
+  --pink: #E75480;          /* primary accent */
+  --pink-soft: #F6A3B8;     /* subtle accent */
   --pink-hover: #d9436f;
 
-  --bg: #E9F1F7;
-  --soft: #F7FAFC;
-  --card: #ffffff;
+  /* Dark Theme Backgrounds */
+  --bg: #081B33;            /* main background */
+  --soft: #0E2A4A;          /* section background */
+  --card: #0F2F52;          /* card panels */
 
-  --text: #0f172a;
-  --muted: #516273;
-  --line: rgba(15, 23, 42, .12);
+  /* Text */
+  --text: #F8FAFC;          /* primary text */
+  --muted: #B6C2CF;         /* secondary text */
+  --line: rgba(255,255,255,.08);
 
   --radius: 16px;
-  --shadow: 0 10px 22px rgba(2, 6, 23, .06);
+  --shadow: 0 12px 26px rgba(0,0,0,.35);
 }
 
 *{box-sizing:border-box}
@@ -33,7 +37,7 @@ a{color:inherit;text-decoration:none}
 /* Top bar */
 .topbar{
   position:sticky; top:0; z-index:50;
-  background: rgba(255,255,255,.86);
+  background: rgba(8,27,51,.85);
   backdrop-filter: blur(10px);
   border-bottom:1px solid var(--line);
 }
@@ -76,8 +80,8 @@ a{color:inherit;text-decoration:none}
   border:1px solid transparent;
 }
 .nav a:hover{
-  border-color: rgba(231,84,128,.35);
-  background: rgba(231,84,128,.08);
+  border-color: rgba(231,84,128,.45);
+  background: rgba(231,84,128,.15);
 }
 
 /* Buttons */
@@ -87,14 +91,14 @@ a{color:inherit;text-decoration:none}
   justify-content:center;
   padding: 10px 12px;
   border-radius: 12px;
-  border:1px solid var(--line);
-  background: white;
-  color: var(--navy);
+ border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.05);
+  color: var(--text);
   transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
 }
 .btn:hover{
   transform: translateY(-1px);
-  box-shadow: 0 10px 18px rgba(231,84,128,.14);
+  box-shadow: 0 8px 18px rgba(231,84,128,.25);
 }
 .btn-primary{
   background: linear-gradient(135deg, var(--pink), #ff8fb3);
