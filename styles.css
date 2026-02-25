@@ -181,7 +181,7 @@ h1{
 .photo img{
   display:block;
   width:100%;
-  height: 280px;
+  height: 380px;
   object-fit: cover;
 }
 .caption{
