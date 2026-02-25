@@ -241,7 +241,13 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
   gap:12px;
   margin-top: 12px;
 }
-
+/* Coursework */
+.coursework-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px;
+  margin-top: 12px;
+}
 /* Experience items */
 .item{
   display:grid;
@@ -299,6 +305,7 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
   .hero-cards{grid-template-columns:1fr}
   .two-col{grid-template-columns:1fr}
   .three-col{grid-template-columns:1fr}
+  .coursework-grid{grid-template-columns:1fr}
   .item{grid-template-columns:1fr}
   h1{font-size:34px}
   .hero-right{justify-content:flex-start}
