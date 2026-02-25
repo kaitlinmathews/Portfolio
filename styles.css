@@ -366,7 +366,8 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
 }
 
 /* Project images: default (responsive) */
-#projects .project-img {
+#projects 
+.project-img {
   width: 100%;
   max-width: 260px;   /* ⬅️ shrink image */
   height: auto;
@@ -376,7 +377,8 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
 }
 
 /* Projects: limit image size so it doesn't dominate */
-#projects .project-img{
+#projects 
+.project-img{
   max-width:340px;      /* make images smaller */
   max-height:260px;     /* keep tall images under control */
   object-fit:cover;
@@ -451,8 +453,11 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
   .photo img{height: 320px}
 
   /* Project images: still controlled on mobile */
-  #projects .project-img{
-    max-width:100%;
-    max-height:260px;
-  }
+  #projects 
+  .project-img{
+  display:block;
+  width:auto;        /* IMPORTANT */
+  max-width:260px;   /* control size */
+  height:auto;
+}
 }
