@@ -1,14 +1,10 @@
-:root{
-  --navy:#0c2340;
-  --pink:#ff4f87;
-  --soft:#ffe4ee;
-  --bg:#fff7fa;
-  --card:#ffffff;
-  --text:#162235;
-  --muted:#5b6678;
-  --line:rgba(12,35,64,.14);
-  --shadow: 0 10px 22px rgba(12,35,64,.10);
-  --radius:14px;
+:root {
+  --navy: #0C2340;
+  --navy-soft: #102A43;
+  --accent: #E75480;
+  --accent-hover: #d9436f;
+  --bg-light: #F4F6F8;
+  --white: #ffffff;
 }
 
 *{box-sizing:border-box}
