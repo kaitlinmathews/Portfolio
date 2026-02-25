@@ -147,14 +147,19 @@ h1{
 .hero-right{display:grid;gap:10px}
 
 /* Photo (top-right) */
-.photo-frame{
-  height: 320px;
+.photo-frame {
+  width: 360px;
+  height: 260px;
   border-radius: 16px;
-  border: 4px solid rgba(12,35,64,.16);
-  box-shadow: var(--shadow);
-  background-image: url('assets/leadership.jpg');
-  background-size: cover;
-  background-position: center 30%;
+  border: 3px solid #d9d9d9;
+  overflow: hidden;   /* keeps image inside frame */
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* fills box nicely */
+  display: block;
 }
 .caption{
   margin: 0;
