@@ -366,13 +366,12 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
 }
 
 /* Project images: default (responsive) */
-.project-img{
-  display:block;
-  width:100%;
-  height:auto;
-  margin-top:10px;
-  border-radius:12px;
-  border:1px solid var(--line);
+#projects .project-img {
+  width: 100%;
+  max-width: 260px;   /* ⬅️ shrink image */
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
   box-shadow: 0 8px 18px rgba(0,0,0,.35);
 }
 
