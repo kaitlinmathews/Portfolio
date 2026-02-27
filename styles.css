@@ -1,7 +1,7 @@
 /* styles.css */
 :root{
   /* Colors */
-  --navy: #363969;          /* qu navy */
+  --navy: #363969;          /*  navy */
   --navy-soft: #8C92AC;     /* panels/sections */
   --pink: #FFBFCB;
   --pink-soft: rgba(231,84,128,.14);
@@ -13,7 +13,7 @@
   --card: #0A2540;
 
   /* Text + lines */
-  --text: #F9FBFD;
+  --text: #FFBFCB;
   --muted: #A9B7C6;
   --line: rgba(255,255,255,.10);
 
