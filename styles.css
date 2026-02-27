@@ -1,21 +1,22 @@
 /* styles.css */
 :root{
-  /* Colors */
-  --navy: #363969;          /*  navy */
-  --navy-soft: #8C92AC;     /* panels/sections */
-  --pink: #FFBFCB;
-  --pink-soft: rgba(231,84,128,.14);
-  --pink-hover: #FCA6BC;
+  /* Pink / Navy / Grey palette (ONLY these 6 colors) */
+  --navy: #363969;          /* Attractive Navy */
+  --navy-soft: #4E5282;     /* Purple Navy (secondary navy) */
+  --gray: #8C92AC;          /* Cool Gray */
+  --pink: #FFBFCB;          /* Digital Pink */
+  --pink-soft: #FFDBE3;     /* Sensational Pastel Pink */
+  --pink-hover: #FCA6BC;    /* Sorbet */
 
-  /* Dark UI */
-  --bg: #0C2340;
-  --soft: #8C92AC;
-  --card: #0A2540;
+  /* Dark UI surfaces (mapped to palette only) */
+  --bg: var(--navy);
+  --soft: var(--navy-soft);
+  --card: var(--navy-soft);
 
-  /* Text + lines */
-  --text: #FFBFCB;
-  --muted: #A9B7C6;
-  --line: rgba(255,255,255,.10);
+  /* Text + lines (mapped to palette only) */
+  --text: var(--pink-soft);
+  --muted: var(--gray);
+  --line: var(--gray);
 
   /* Shape + depth */
   --radius: 16px;
@@ -34,7 +35,7 @@ body{
 
 a{color:inherit;text-decoration:none}
 .container{
-  width: min(auto, 96vw);  /* fills most of the screen, caps at 1200 */
+  width: min(auto px, 96vw);
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -46,17 +47,15 @@ a{color:inherit;text-decoration:none}
   position:sticky;
   top:0;
   z-index:50;
-  background: rgba(4,20,38,.88);
-  backdrop-filter: blur(12px);
+  background: var(--navy);                 /* solid palette color */
   border-bottom:1px solid var(--line);
 }
-
 
 .topbar-inner{
   display:flex;
   align-items:center;
-  justify-content:flex-start;
-  gap:18px;              /* 40px is too big in the header */
+  justify-content:space-between;
+  gap:18px;
 }
 
 /* Brand */
@@ -64,15 +63,15 @@ a{color:inherit;text-decoration:none}
   display:flex;
   align-items:center;
   gap:12px;
-  min-width:0;          /* IMPORTANT: stops it from hogging space */
-  flex-shrink:1;
+  min-width:0;
+  flex:0 0 auto;
 }
 
 .brand-logo{
   width:75px;
   height:75px;
   object-fit:contain;
-  background: rgba(255,255,255,.06);
+  background: var(--navy-soft);
   border:1px solid var(--line);
   border-radius: 12px;
   padding:6px;
@@ -96,6 +95,8 @@ a{color:inherit;text-decoration:none}
   gap:18px;
   align-items:center;
   white-space:nowrap;
+  flex:1 1 auto;
+  justify-content:center;
 }
 
 .nav a{
@@ -108,8 +109,9 @@ a{color:inherit;text-decoration:none}
 }
 
 .nav a:hover{
-  border-color: rgba(231,84,128,.35);
-  background: rgba(231,84,128,.10);
+  border-color: var(--pink-hover);
+  background: var(--pink-soft);
+  color: var(--navy);
 }
 
 /* =========================
@@ -121,32 +123,32 @@ a{color:inherit;text-decoration:none}
   justify-content:center;
   padding: 10px 12px;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.06);
+  border: 1px solid var(--line);
+  background: var(--navy-soft);
   color: var(--text);
   transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
 }
 
 .btn:hover{
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(231,84,128,.18);
-  border-color: rgba(231,84,128,.28);
+  box-shadow: 0 6px 16px rgba(0,0,0,.25);
+  border-color: var(--pink-hover);
 }
 
 .btn-primary{
-  background: linear-gradient(135deg, var(--pink), #ff8fb3);
+  background: linear-gradient(135deg, var(--pink), var(--pink-hover));
   border-color: transparent;
-  color:white;
+  color: var(--navy);
   font-weight:600;
   letter-spacing:.2px;
 }
 
 .btn-primary:hover{
-  background: linear-gradient(135deg, var(--pink-hover), #ff7faa);
+  background: linear-gradient(135deg, var(--pink-hover), var(--pink));
 }
 
 .btn-ghost{
-  background: rgba(255,255,255,.04);
+  background: var(--navy-soft);
 }
 
 /* Topbar-only button refinement (keeps hero buttons unchanged) */
@@ -176,9 +178,9 @@ a{color:inherit;text-decoration:none}
   font-size:12px;
   letter-spacing:.12em;
   text-transform:uppercase;
-  color: var(--text);
-  background: rgba(231,84,128,.12);
-  border: 1px solid rgba(231,84,128,.22);
+  color: var(--navy);
+  background: var(--pink-soft);
+  border: 1px solid var(--pink-hover);
   padding: 7px 10px;
   border-radius: 999px;
 }
@@ -188,7 +190,7 @@ h1{
   font-size: 42px;
   line-height: 1.10;
   color: var(--text);
-  text-shadow: 0 4px 18px rgba(231,84,128,.14);
+  text-shadow: 0 4px 18px rgba(0,0,0,.25);
 }
 
 .lead{
@@ -241,7 +243,7 @@ h1{
   font-size: 13px;
   color: var(--muted);
   text-align: center;
-  background: rgba(4,20,38,.75);
+  background: var(--navy);
   border-top: 1px solid var(--line);
 }
 
@@ -266,7 +268,7 @@ h1{
   justify-content:space-between;
   gap:12px;
   padding-bottom:8px;
-  border-bottom:1px solid rgba(255,255,255,.10);
+  border-bottom:1px solid var(--line);
 }
 
 .fact:last-child{border-bottom:none;padding-bottom:0}
@@ -279,7 +281,7 @@ h1{
 .section{padding: 30px 0}
 
 .alt{
-  background: rgba(255,255,255,.03);
+  background: var(--soft);
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
 }
@@ -327,7 +329,6 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
 
 .item-left{min-width: 240px}
 
-
 /* Experience header layout */
 .experience-header{
   display:flex;
@@ -340,7 +341,7 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
   width:60px;
   height:60px;
   object-fit:contain;
-  background:white;
+  background: var(--pink-soft);
   border-radius:8px;
   padding:4px;
 }
@@ -369,22 +370,15 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
   align-items:flex-start;
 }
 
-/* Project images: default (responsive) */
-#projects 
-.project-img {
+/* Project images */
+#projects .project-img{
   width: 100%;
-  max-width: 260px;   /* ⬅️ shrink image */
-  height: auto;
+  max-width:340px;
+  max-height:260px;
+  height:auto;
   border-radius: 12px;
   border: 1px solid var(--line);
   box-shadow: 0 8px 18px rgba(0,0,0,.35);
-}
-
-/* Projects: limit image size so it doesn't dominate */
-#projects 
-.project-img{
-  max-width:340px;      /* make images smaller */
-  max-height:260px;     /* keep tall images under control */
   object-fit:cover;
 }
 
@@ -393,8 +387,6 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
    ========================= */
 .list{margin:0;padding-left:18px}
 .list li{margin:6px 0}
-
-/* Projects: slightly more breathing room on bullets */
 #projects .list li{margin:8px 0}
 
 /* =========================
@@ -410,9 +402,9 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
 .chip{
   padding:7px 10px;
   border-radius:999px;
-  border:1px solid rgba(231,84,128,.28);
-  background: rgba(231,84,128,.12);
-  color: var(--text);
+  border:1px solid var(--pink-hover);
+  background: var(--pink-soft);
+  color: var(--navy);
   font-size:13px;
   font-weight:650;
 }
@@ -429,7 +421,7 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
 .footer{
   padding: 18px 0;
   border-top:1px solid var(--line);
-  background: rgba(4,20,38,.88);
+  background: var(--navy);
 }
 
 .footer-inner{
@@ -456,12 +448,10 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
   .hero-right{justify-content:flex-start}
   .photo img{height: 320px}
 
-  /* Project images: still controlled on mobile */
-  #projects 
-  .project-img{
-  display:block;
-  width:auto;        /* IMPORTANT */
-  max-width:260px;   /* control size */
-  height:auto;
-}
+  #projects .project-img{
+    display:block;
+    width:auto;
+    max-width:260px;
+    height:auto;
+  }
 }
