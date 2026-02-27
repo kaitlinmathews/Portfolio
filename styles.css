@@ -181,10 +181,10 @@ a{color:inherit;text-decoration:none}
   font-size:12px;
   letter-spacing:.12em;
   text-transform:uppercase;
-  color: var(--text);
-  background: var(--pink-soft);
-  border: 1px solid var(--pink-hover);
-  padding: 7px 10px;
+  color: #FFFFFF;                         /* clean white text */
+  background: rgba(255,255,255,.04);      /* dark subtle fill */
+  border: 1px solid rgba(231,84,128,.45); /* pink accent outline */
+  padding: 7px 14px;
   border-radius: 999px;
 }
 
