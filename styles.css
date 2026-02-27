@@ -1,24 +1,21 @@
 /* styles.css */
 :root{
-  /* Pink / Navy / Grey palette (ONLY these 6 colors) */
-  --navy: #363969;          /* Attractive Navy */
-  --navy-soft: #4E5282;     /* Purple Navy (secondary navy) */
-  --gray: #8C92AC;          /* Cool Gray */
-  --pink: #FFBFCB;          /* Digital Pink */
-  --pink-soft: #FFDBE3;     /* Sensational Pastel Pink */
-  --pink-hover: #FCA6BC;    /* Sorbet */
+  /* Core Dark Base */
+  --bg: #0C2340;          /* deep navy background */
+  --soft: #081E34;        /* section background */
+  --card: #0A2540;        /* panels/cards */
 
-  /* Dark UI surfaces (mapped to palette only) */
-  --bg: var(--navy);
-  --soft: var(--navy-soft);
-  --card: var(--navy-soft);
+  /* Accent */
+  --pink: #E75480;        /* main accent */
+  --pink-hover: #d9436f;
+  --pink-soft: rgba(231,84,128,.12);
 
-  /* Text + lines (mapped to palette only) */
-  --text: #ffffff;;
-  --muted: #D9DCE6;   /* soft white-grey */
-  --line: var(--gray);
+  /* Text */
+  --text: #FFFFFF;        /* clean white */
+  --muted: #A9B7C6;       /* cool professional gray */
+  --line: rgba(255,255,255,.10);
 
-  /* Shape + depth */
+  /* Structure */
   --radius: 16px;
   --shadow: 0 14px 32px rgba(0,0,0,.45);
 }
