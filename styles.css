@@ -34,7 +34,7 @@ body{
 
 a{color:inherit;text-decoration:none}
 .container{
-  width: min(1200px, 96vw);  /* fills most of the screen, caps at 1200 */
+  width: min(auto, 96vw);  /* fills most of the screen, caps at 1200 */
   margin: 0 auto;
   padding: 0 24px;
 }
