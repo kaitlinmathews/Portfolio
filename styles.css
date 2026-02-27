@@ -1,15 +1,15 @@
 /* styles.css */
 :root{
   /* Colors */
-  --navy: #0C2340;          /* qu navy */
-  --navy-soft: #0A2540;     /* panels/sections */
-  --pink: #E75480;
+  --navy: #363969;          /* qu navy */
+  --navy-soft: #8C92AC;     /* panels/sections */
+  --pink: #FFBFCB;
   --pink-soft: rgba(231,84,128,.14);
-  --pink-hover: #d9436f;
+  --pink-hover: #FCA6BC;
 
   /* Dark UI */
   --bg: #0C2340;
-  --soft: #081E34;
+  --soft: #8C92AC;
   --card: #0A2540;
 
   /* Text + lines */
