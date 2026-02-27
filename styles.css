@@ -6,8 +6,9 @@
   --card: #0A2540;        /* panels/cards */
 
     /* ADD THESE BACK */
-  --navy: #0C2340;
-  --navy-soft: #0A2540;
+  
+  --navy: var(--bg);
+--navy-soft: var(--card);
 
   /* Accent */
   --pink: #E75480;        /* main accent */
@@ -244,7 +245,7 @@ h1{
   font-size: 13px;
   color: var(--muted);
   text-align: center;
-  background: var(--navy);
+  background: var(--card);
   border-top: 1px solid var(--line);
 }
 
@@ -342,9 +343,10 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
   width:60px;
   height:60px;
   object-fit:contain;
-  background: var(--pink-soft);
+  background: rgba(255,255,255,.95); /* clean logo tile */
+  border: 1px solid rgba(255,255,255,.18);
   border-radius:8px;
-  padding:4px;
+  padding:8px;
 }
 
 /* Projects: tighter spacing + hover polish */
