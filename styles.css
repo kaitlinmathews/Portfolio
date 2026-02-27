@@ -15,7 +15,7 @@
 
   /* Text + lines (mapped to palette only) */
   --text: #ffffff;;
-  --muted: var(--gray);
+  --muted: #D9DCE6;   /* soft white-grey */
   --line: var(--gray);
 
   /* Shape + depth */
