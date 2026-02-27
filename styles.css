@@ -403,13 +403,19 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
 }
 
 .chip{
-  padding:7px 10px;
+  padding:7px 12px;
   border-radius:999px;
-  border:1px solid var(--pink-hover);
-  background: var(--pink-soft);
-  color: var(--text);
+  border:1px solid rgba(231,84,128,.45);   /* subtle pink outline */
+  background: rgba(255,255,255,.04);       /* dark surface */
+  color: #FFFFFF;                          /* clean white text */
   font-size:13px;
-  font-weight:650;
+  font-weight:600;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.chip:hover{
+  background: rgba(231,84,128,.12);         /* soft pink hover */
+  border-color: var(--pink);
 }
 
 /* =========================
