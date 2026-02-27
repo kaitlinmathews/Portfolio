@@ -50,8 +50,8 @@ a{color:inherit;text-decoration:none}
 .topbar-inner{
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  gap:12px;
+ justify-content: flex-start;   /* was space-between */
+  gap: 40px;                     /* controls spacing between items */
   padding: 15px 0;
 }
 
