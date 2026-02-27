@@ -52,7 +52,6 @@ a{color:inherit;text-decoration:none}
   align-items:center;
  justify-content: flex-start;   /* was space-between */
   gap: 40px;                     /* controls spacing between items */
-  padding: 15px 0;
 }
 
 /* Brand */
