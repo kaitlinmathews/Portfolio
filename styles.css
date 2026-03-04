@@ -375,8 +375,8 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
 
 /* Project images */
 #projects .project-img{
-  width: 100%;
-  max-width:340px;
+  width: auto;
+  max-width:320px;
   max-height:260px;
   height:auto;
   border-radius: 12px;
