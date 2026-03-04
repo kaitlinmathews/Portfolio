@@ -386,11 +386,11 @@ h3{margin:0 0 6px;color: var(--text);font-size:18px}
 }
 
 .leadership-card img{
-  width:auto%;
-  height:180px;
-  object-fit:cover;
-  border-radius:10px;
+  width:90px;
+  height:90px;
+  object-fit:contain;
   margin-bottom:12px;
+  border-radius:8px;
 }
 
 .leadership-card h3{
